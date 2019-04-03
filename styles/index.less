@@ -1,0 +1,91 @@
+
+.layout{
+    display: flex;
+    width:100vw;
+    height:100vh;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 640px;
+    .pyg_hearder{
+        height: 40px;
+        width: 100%;
+    }
+    .pyg_content{
+        flex:1;
+        overflow: scroll;
+        .pyg_nav{
+            width: 100%;
+            padding:10px;
+            background-color: #fff;
+            a{
+                display: block;
+                width: 25%;
+                float: left;
+                text-align: center;
+                img{
+                    width: 50%;
+
+                }
+                div{
+                    font-size: 13px;
+                    color:#333;
+                }
+            }
+        }
+        .pyg_productList{
+            padding: 15px;
+            .pyg_bbox{
+                width: 100%;
+                margin-top: 10px;
+                >img{
+                    width: 100%;
+                    // 清除基线
+                    display: block;
+                }
+                >.pyg_sbox{
+                    margin-top:10px;
+                    width: 49%;
+                    float: left;
+                    background-color: #fff;
+                    &:nth-of-type(2n){
+                        margin-left: 2%;
+                    }
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                    .pgy_desc{
+                        color:#333;
+                        font-size: 13px;
+                        margin:5px 0;
+                        display: -webkit-box; /*将对象作为弹性伸缩盒子模型显示*/ 
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        word-wrap: break-word; 
+                        -webkit-line-clamp: 2;/*限制在一个块元素显示的文本的行数*/ 
+                        -webkit-box-orient: vertical; /*设置或检索伸缩盒对象的子元素的排列方式*/ 
+                    }
+                    .pgy_price{
+                        color: red;
+                    }
+                    .pyg_btncate{
+                        width: 80%;
+                        display: block;
+                        margin: 5px auto;
+                    }
+                }
+            }
+        }
+    }
+    .pyg_footer{
+        height:50px;
+        .shopingCart{
+           span:nth-of-type(1){
+            font-size: 22px;
+           }
+           span:nth-of-type(2){
+            font-size: 12px;
+           }
+        }
+    }
+}

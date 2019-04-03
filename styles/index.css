@@ -1,0 +1,89 @@
+.layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 640px;
+}
+.layout .pyg_hearder {
+  height: 40px;
+  width: 100%;
+}
+.layout .pyg_content {
+  flex: 1;
+  overflow: scroll;
+}
+.layout .pyg_content .pyg_nav {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+}
+.layout .pyg_content .pyg_nav a {
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.layout .pyg_content .pyg_nav a img {
+  width: 50%;
+}
+.layout .pyg_content .pyg_nav a div {
+  font-size: 13px;
+  color: #333;
+}
+.layout .pyg_content .pyg_productList {
+  padding: 15px;
+}
+.layout .pyg_content .pyg_productList .pyg_bbox {
+  width: 100%;
+  margin-top: 10px;
+}
+.layout .pyg_content .pyg_productList .pyg_bbox > img {
+  width: 100%;
+  display: block;
+}
+.layout .pyg_content .pyg_productList .pyg_bbox > .pyg_sbox {
+  margin-top: 10px;
+  width: 49%;
+  float: left;
+  background-color: #fff;
+}
+.layout .pyg_content .pyg_productList .pyg_bbox > .pyg_sbox:nth-of-type(2n) {
+  margin-left: 2%;
+}
+.layout .pyg_content .pyg_productList .pyg_bbox > .pyg_sbox img {
+  width: 100%;
+  display: block;
+}
+.layout .pyg_content .pyg_productList .pyg_bbox > .pyg_sbox .pgy_desc {
+  color: #333;
+  font-size: 13px;
+  margin: 5px 0;
+  display: -webkit-box;
+  /*将对象作为弹性伸缩盒子模型显示*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  /*限制在一个块元素显示的文本的行数*/
+  -webkit-box-orient: vertical;
+  /*设置或检索伸缩盒对象的子元素的排列方式*/
+}
+.layout .pyg_content .pyg_productList .pyg_bbox > .pyg_sbox .pgy_price {
+  color: red;
+}
+.layout .pyg_content .pyg_productList .pyg_bbox > .pyg_sbox .pyg_btncate {
+  width: 80%;
+  display: block;
+  margin: 5px auto;
+}
+.layout .pyg_footer {
+  height: 50px;
+}
+.layout .pyg_footer .shopingCart span:nth-of-type(1) {
+  font-size: 22px;
+}
+.layout .pyg_footer .shopingCart span:nth-of-type(2) {
+  font-size: 12px;
+}
